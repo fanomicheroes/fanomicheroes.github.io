@@ -18,6 +18,7 @@
     background: linear-gradient(90deg, #ff70c2 0%, #8e67d2 50%, #629ae7 100%);
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
+    visibility: hidden;
   }
   #active:checked ~ .wrapper{
     clip-path: circle(75%);
@@ -52,6 +53,11 @@
     opacity:0;
     visibility: hidden;
   }
+
+  #active:checked ~ .wrapper{
+    visibility: visible;
+  }
+
   .wrapper ul{
     position: absolute;
     top: 50%;

@@ -4,26 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Made Easy</title>
+  <title>Homepage</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/homepage.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 
 <body>
   <section>
-    <div class="container">
+    <input type="checkbox" id="active" >
+    <label for="active" class="menu-btn" id="hide"><i class="fas fa-bars"></i></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="/homepage.html">Home</a></li>
+        <li><a href="/or.html">Or</a></li>
+        <li><a href="/but.html">But</a></li>
+        <li><a href="/and.html">And</a></li>
+        <li><a href="#">Comic</a></li>
+        <li><a href="#">Exercise</a></li>
+      </ul>
+    </div>
+    <div class="container" id="content">
       <div class="split">
         <div class="content">
           <div class="animate">
             <img src="img/or.png">
           </div>
           <h1 class="kreep">
-            <button class="button btn-or"><b><span>I am OR</span></b></button>
+            <button class="button btn-or" onclick="location.href='/or.html';"><b><span>I am OR</span></b></button>
           </h1>
         </div>
         <div class="content">
@@ -31,7 +43,7 @@
             <img src="img/but.png">
           </div>
           <h1 class="kreep">
-            <button class="button btn-but"><b><span>I am BUT</span></b></button>
+            <button class="button btn-but" onclick="location.href='/but.html';"><b><span>I am BUT</span></b></button>
           </h1>
         </div>
         <div class="content">
@@ -39,7 +51,7 @@
             <img src="img/and.png">
           </div>
           <h1 class="kreep">
-            <button class="button btn-and"><b><span>I am AND</span></b></button>
+            <button class="button btn-and" onclick="location.href='/and.html';"><b><span>I am AND</span></b></button>
           </h1>
         </div>
       </div>

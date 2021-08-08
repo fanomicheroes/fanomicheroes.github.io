@@ -4,7 +4,9 @@
   
     --clr-neutral-100: #fff;
     --clr-neutral-900: #222c2a;
-  
+    --clr-or: #fdf9f2;
+    --clr-but: #584e86;
+    --clr-and: #b6ebf7;
     --ff-primary: "Roboto", sans-serif;
     --ff-accent: "Playfair Display", serif;
   }
@@ -15,12 +17,13 @@
     box-sizing: border-box;
   }
   
-  input,
-  textarea,
-  button,
-  select,
-  a {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  ::selection {
+    color: none;
+    background: none;
   }
 
   body {

@@ -10,10 +10,6 @@
   font-weight: bold;
 }
 
-body {
-  overflow: hidden;
-}
-
 .title {
   font-family: font1;
   letter-spacing: 0.5rem;
@@ -127,5 +123,9 @@ body {
 
     .wrap {
       padding-top: 2.5%;
+    }
+
+    body {
+      overflow: hidden;
     }
   }

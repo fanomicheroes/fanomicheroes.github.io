@@ -41,6 +41,10 @@ body {
   padding-top: 2.5%;
 }
 
+.content-title {
+  padding-bottom: 1%;
+}
+
 .vid, .comic {
   max-width: 100%;
   display: block;
@@ -50,7 +54,6 @@ body {
 }
 
 .comic {
-  padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
 
@@ -175,7 +178,7 @@ body {
   text-align:center; font-size:3rem; text-transform:uppercase; color:#222; letter-spacing:1px;
   font-family: font2; font-weight:400;
   letter-spacing: 0.5rem;
-  padding-top: 2.5%;
+  padding-top: 5%;
 }
 
 .nine h1 .sub-title {

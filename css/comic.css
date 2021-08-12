@@ -29,6 +29,8 @@ body {
 }
 .middle {
   /* background: lightgreen; */
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
@@ -53,12 +55,24 @@ body {
 }
 
 .icon {
-  /* max-width: 100%; */
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
+.icon-left {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+}
+
+.icon-right {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  margin-right: auto;
+}
 
 /* Navbar */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -191,5 +205,14 @@ body {
   .nine h1 {
     font-size: 1rem;
     letter-spacing: 0.1rem;
+  }
+
+  .content {
+    margin-top: 15%;
+  }
+
+  .middle {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

@@ -1,7 +1,35 @@
+@font-face {
+  font-family: font1;
+  src: url("/font/BestSchoolFontbyKelik.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: font2;
+  src: url("/font/HeyComic.otf") format("opentype");
+  font-weight: bold;
+}
+
+.title {
+  font-family: font1;
+  letter-spacing: 0.5rem;
+}
+
+.sub-title {
+  font-family: font2;
+}
+
+.bg-splash {
+  background: url("/img/BG-1.png")  ;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
 .content {
   text-align: center;
   top: 50%;
   margin: auto;
+  padding-top: 100px;
 }
 
 .wrap {
@@ -14,7 +42,7 @@
   .button {
     min-width: 300px;
     min-height: 60px;
-    font-family: 'Nunito', sans-serif;
+    font-family: font2;
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
@@ -84,5 +112,12 @@
       width: 150px;
       height: 150px;
       opacity: 0;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .content {
+      padding-top: 0px;
     }
   }

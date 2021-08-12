@@ -2,6 +2,41 @@
     box-sizing: border-box;
 } */
 
+body {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: font1;
+  src: url("/font/BestSchoolFontbyKelik.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: font2;
+  src: url("/font/HeyComic.otf") format("opentype");
+  font-weight: bold;
+}
+
+.bg-homepage {
+  position: relative;
+}
+
+.bg-homepage::before {
+  opacity: 0.5 ;
+  z-index: -10;
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/BG-2.png") ;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
 .content {
     text-align: center; 
     z-index: 3;
@@ -19,6 +54,7 @@
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
     visibility: hidden;
+    font-family: font2;
   }
   #active:checked ~ .wrapper{
     clip-path: circle(75%);
@@ -106,13 +142,19 @@
 /* Title */
 .nine h1 {
     text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
-    font-family:"Playfair Display", serif; font-weight:400;
+    font-family: font2; font-weight:400;
+    letter-spacing: 1rem;
 }
 
-.nine h1 span {
+/* .space {
+  margin-right: 10px;
+  margin-left: 10px;
+} */
+
+.nine h1 .sub-title {
     margin-top: 5px;
     font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
-    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+    text-transform: uppercase; font-family: font1; font-weight:500;
   
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
@@ -121,13 +163,13 @@
     align-items: center;
 }
   
-.nine h1 span:after,.nine h1 span:before {
+.nine h1 .sub-title:after,.nine h1 .sub-title:before {
     content: " ";
     display: block;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    height: 5px;
-    background-color:#f8f8f8;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    height: 0px;
+    background-color:transparent;
 }
 
 /* Heroes Wiggling */
@@ -177,6 +219,19 @@
 } */
 
 @media only screen and (max-width: 768px) {
+    /* .space {
+      padding-left: 0px;
+      padding-right: 0px;
+    } */
+
+    body {
+      overflow: visible;
+    }
+
+    .nine {
+      padding-top: 25px;
+    }
+
     .animate {
         padding-top: 5%;
     }
@@ -226,6 +281,7 @@
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 20px;
+    font-family: font2;
 }
 
 .btn-or {
